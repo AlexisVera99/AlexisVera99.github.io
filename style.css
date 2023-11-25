@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+body {
+    background: aquamarine;
+    font-family: monserrat,sans-serif;
+    color:aquamarine;
+}
+h1 { 
+    color: aqua;
+}
+#contenedor {
+    width: 900px;
+    height: 500px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    color: orange;
+    overflow: hidden;
+    border-radius: 50px;
+}
+#calculadora{
+    background: rgb(84, 145, 151);
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+#detalle {
+    background: rgb(45, 76, 169);
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: orange;
+}
+.contenido {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 40px;
+}
+button { 
+    background-color: rgb(25, 34, 128);
+    color: aliceblue;
+}
+input {
+    border-radius: 5px;
+}
