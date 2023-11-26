@@ -1,12 +1,17 @@
 function validarPeso(peso){   
+    if (peso < 0) {
+        console.log("error: tu hijo flota")
+        return 
+    }
+    let resultado; 
     if(peso <= 30){
-        let resultado = Holliday(peso)
-        return resultado
+        resultado = Holliday(peso)
     }
     else{
-        let resultado = SuperficieCorporal(peso)
-        return resultado
+        resultado = SuperficieCorporal(peso)
     }
+    return resultado
+
 }
 
 function Holliday(peso) {
@@ -28,5 +33,5 @@ function SuperficieCorporal(peso){
      let resultado = ((peso * 4) + 7) / (peso + 90)
         return resultado 
 }
-let resultado = validarPeso(-10)
+let resultado = validarPeso(10)
 console.log(resultado)
