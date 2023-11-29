@@ -15,9 +15,11 @@ calcular.addEventListener("click", () => {
         FLU.innerHTML = flujo + " cc/hr";
         MAN.innerHTML = "m+m/2 " + mantenimiento + " cc/hr";
     }else{    
-        let volumenDiario = superficieCorporal(DATO);
-        FLU.innerHTML = volumenDiario*1500 + " cc/hr";
-        MAN.innerHTML = volumenDiario*2000 + " cc/hr";
+
+        let volumenDiario1 = superficieCorporal(DATO)*1500 
+        let volumenDiario2 = superficieCorporal(DATO)*2000 
+        FLU.innerHTML = volumenDiario1.toFixed(2) +  " cc/h"
+        MAN.innerHTML = volumenDiario2.toFixed(2) +  " cc/h"
      } 
         ERROR.style.display = 'block';   
         FLU.style.display = "block";
@@ -43,7 +45,7 @@ function holliday(peso){
 console.log(resultado)
 }
 function superficieCorporal(peso){
-    let resultado = (((peso * 4) + 7) / (peso + 90));
+    let resultado = ((peso * 4) + 7) / (peso + 90);
     return resultado ;
 }
 
