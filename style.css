@@ -45,3 +45,6 @@ h1 {
 input{
     border-radius: 10px;
 }
+.resultado{
+    display: none;
+}
