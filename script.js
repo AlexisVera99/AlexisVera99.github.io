@@ -13,11 +13,11 @@ calcular.addEventListener("click", () => {
         let flujo = holliday(DATO);
         let mantenimiento = flujo + flujo/2;
         FLU.innerHTML = flujo + " cc/hr";
-        MAN.innerHTML = "m+m/2" + mantenimiento + "cc/hr";
+        MAN.innerHTML = "m+m/2 " + mantenimiento + " cc/hr";
     }else{    
         let volumenDiario = superficieCorporal(DATO);
-        FLU.style.display = (1500 * volumenDiario) + "cc/hr";
-        MAN.style.display = (2000 * volumenDiario) + "cc/hr";
+        FLU.innerHTML = volumenDiario*1500 + " cc/hr";
+        MAN.innerHTML = volumenDiario*2000 + " cc/hr";
      } 
         ERROR.style.display = 'block';   
         FLU.style.display = "block";
