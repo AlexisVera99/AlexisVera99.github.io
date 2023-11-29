@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 body {
-    background: aquamarine;
+    background-image: url(seamless-pattern-with-icons-on-the-theme-of-medicine-doodle-with-medicine-icons-on-black-background-vintage-medicine-icons-vector.jpg);
     font-family: monserrat,sans-serif;
     color:aquamarine;
 }
@@ -13,22 +13,22 @@ h1 {
     position: absolute;
     inset: 0;
     margin: auto;
-    color: orange;
+    color: rgb(255, 255, 255);
     overflow: hidden;
     border-radius: 50px;
 }
 #calculadora{
-    background: rgb(84, 145, 151);
+    background-image: linear-gradient(to right, #000000, rgb(32, 31, 112) );
     width: 50%;
     height: 100%;
     float: left;
 }
 #detalle {
-    background: rgb(45, 76, 169);
+    background-image: linear-gradient(to right, rgb(37, 31, 112), rgb(0, 0, 0));
     width: 50%;
     height: 100%;
-    float: left;
-    color: orange;
+    float: right;
+    color: rgb(255, 255, 255);
 }
 .contenido {
     position: relative;
@@ -37,10 +37,11 @@ h1 {
     overflow: hidden;
     padding: 40px;
 }
-button { 
-    background-color: rgb(25, 34, 128);
-    color: aliceblue;
+#boton { 
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
 }
-input {
-    border-radius: 5px;
+input{
+    border-radius: 10px;
 }
